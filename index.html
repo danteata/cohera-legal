@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Privacy Policy — Cohera</title>
-<meta name="description" content="Privacy policy for the Cohera impromptu-speaking app: what stays on your device, what leaves it, and who else processes it.">
+<title>Delete your Cohera account</title>
+<meta name="description" content="How to delete your Cohera account and every rep, transcript and score attached to it — from inside the app, or by email.">
 <style>
   :root {
     color-scheme: light dark;
@@ -82,79 +82,71 @@
     </svg>
     <span>Cohera</span>
   </div>
-  <h1>Privacy Policy</h1>
-  <p class="updated">Last updated 22 September 2026</p>
+  <h1>Delete your account</h1>
+  <p class="updated">Cohera &mdash; impromptu speaking practice &middot; Last updated 22 September 2026</p>
 </header>
 
-<p>Cohera is a speaking-practice app. You are given a random word, you speak on it for a minute or two, and the app scores how clearly you spoke. This page explains exactly what that involves for your data.</p>
+<p>This page explains how to delete your <strong>Cohera</strong> account and everything stored with it. Deletion is immediate and cannot be undone.</p>
+
+<h2>Delete it from inside the app</h2>
+<p>This is the fastest way, and it takes effect straight away.</p>
+<ol>
+  <li>Open <strong>Cohera</strong> and sign in, if you are not already.</li>
+  <li>Go to the <strong>Profile</strong> tab (bottom right).</li>
+  <li>Scroll to <strong>Settings</strong> and tap <strong>Delete account</strong>.</li>
+  <li>Read what will be removed, type <code>DELETE</code> to confirm, and tap <strong>Delete my account</strong>.</li>
+</ol>
+<p>You will be signed out as soon as it is done. There is no grace period and nothing is archived.</p>
+
+<h2>Or ask us to do it</h2>
+<p>If you cannot open the app, email <a href="mailto:dan.abakah@gmail.com">dan.abakah@gmail.com</a> from the address you signed in with, with the subject <strong>Delete my account</strong>. We will confirm and remove everything within 30 days, usually far sooner.</p>
+<p>We ask you to write from the address on the account because it is the only way we can tell it is you. We will not ask you for a password, and we never have one &mdash; Cohera signs you in through Google or Apple.</p>
+
+<h2>What is deleted</h2>
+<p>Everything below is removed permanently, from our live systems, at the moment you confirm:</p>
+<ul>
+  <li><strong>Every practice session</strong>: the transcript of what you said, your scores, the written feedback, the word you were given, the duration, your filler-word count and speaking rate.</li>
+  <li><strong>Your progress</strong>: streak, level, XP and achievements.</li>
+  <li><strong>Any saved recordings</strong>, including the underlying audio files in our storage.</li>
+  <li><strong>Your profile</strong>: display name, email address and avatar.</li>
+  <li><strong>Your sign-in record</strong> with our authentication provider, Clerk, so the account itself stops existing.</li>
+  <li><strong>Everything the app stored on your device</strong>, including guest progress from before you signed in.</li>
+</ul>
+
+<h2>What is kept, and for how long</h2>
+<table>
+  <tr><th>What</th><th>How long</th><th>Why</th></tr>
+  <tr>
+    <td>Encrypted database backups containing your rows</td>
+    <td>Up to 30 days, then overwritten</td>
+    <td>Backups roll on a fixed schedule and cannot be edited in place. Nothing is restored from them except to recover from a failure.</td>
+  </tr>
+  <tr>
+    <td>Anonymous usage counts (how many reps were taken, and when)</td>
+    <td>Indefinitely</td>
+    <td>Aggregated and not linked to you or to any transcript once your account is gone.</td>
+  </tr>
+  <tr>
+    <td>Google Play purchase records, if you subscribed</td>
+    <td>As Google requires</td>
+    <td>Held by Google, not by us. We never receive your payment details.</td>
+  </tr>
+</table>
 
 <div class="callout">
-  <p><strong>The short version.</strong> Speech-to-text happens on your device. The <em>text</em> of what you said is sent to our servers to be scored and to two processors that turn it into feedback. Your recordings stay on your phone unless you save one. Nobody is shown your transcript alongside your name.</p>
+  <p><strong>Deleting your account does not cancel a subscription.</strong> Google Play subscriptions are managed by Google and keep billing until you cancel them in the Play Store. Cancel first, then delete.</p>
 </div>
 
-<h2>What Cohera collects</h2>
-
-<h3>Your voice</h3>
-<p>When you record a practice session, audio is captured on your device and transcribed there, by your phone&rsquo;s own speech recognition. The audio itself is not uploaded for transcription.</p>
-<p>The recording stays on your device. It is only uploaded to our storage if you explicitly save or share a session.</p>
-
-<h3>Your transcript</h3>
-<p>The text of what you said is sent to our servers so the session can be scored, and is stored with your account so you can read it back later.</p>
-<p>To score it and write feedback on it, that text is sent to two processors:</p>
-<table>
-  <tr><th>Processor</th><th>What it receives</th><th>Why</th></tr>
-  <tr><td>TypeSafe (<code>api.typesafe.ai</code>)</td><td>The transcript, the word you were given, the length of the session</td><td>Produces the numeric scores</td></tr>
-  <tr><td>OpenAI <em>or</em> Google (Gemini)</td><td>The same</td><td>Writes the sentences of written feedback</td></tr>
-</table>
-<p>Your name, email address and account identifier are <strong>not</strong> sent to either. Neither processor receives your identity alongside the text.</p>
-<p>If you turn on live coaching, short excerpts of the last 45 seconds are sent to TypeSafe every few seconds during the session, for the same purpose and on the same terms. Nothing from live coaching is stored.</p>
-
-<h3>Your account</h3>
-<p>If you sign in, our authentication provider (Clerk) processes your email address, display name and profile picture from the provider you chose.</p>
-<p>You can use Cohera without an account. A signed-out session is scored on your device and is not sent anywhere.</p>
-
-<h3>Session data</h3>
-<p>For each session we store the word you were given, its length, your transcript, your scores, your filler-word count and speaking rate, and the written feedback. This is what your streak and progress are built from.</p>
-
-<h3>Usage analytics</h3>
-<p>We record in-app events &mdash; screens opened, sessions started and completed, scores &mdash; through Amplitude, tied to your account identifier. It does not include your transcript.</p>
-
-<h3>Purchases</h3>
-<p>If you subscribe, the purchase is processed by Google Play. We receive your subscription status, never your payment details.</p>
-
-<h2>What we do not do</h2>
-<ul>
-  <li>We do not sell your personal information.</li>
-  <li>We do not use your recordings or transcripts to train AI models.</li>
-  <li>We do not show third-party advertising.</li>
-  <li>We do not request camera, contacts or location access for practice sessions.</li>
-</ul>
-
-<h2>Where your data is held</h2>
-<p>Session data is stored with Convex. Processing takes place in the United States. If you are in the UK, EEA or another region with data-transfer rules, your data is transferred to and processed in the US.</p>
-
-<h2>How long we keep it</h2>
-<ul>
-  <li><strong>Sessions</strong>: kept while your account exists. Delete a session and it is removed.</li>
-  <li><strong>Account data</strong>: deleted when you delete your account. Email us at the address below and we will remove your profile, sessions, transcripts and scores within 30 days.</li>
-  <li><strong>Recordings</strong>: on your device, under your control, unless you chose to save one to your account.</li>
-</ul>
-
-<h2>Your rights</h2>
-<p>You can request access to, correction of, or deletion of your data at the address below. If you are in the UK or EEA, you also have the right to object to processing, to request portability, and to complain to your data protection authority.</p>
-
-<h2>Children</h2>
-<p>Cohera is not directed at children under 13, and we do not knowingly collect their data.</p>
-
-<h2>Changes</h2>
-<p>We will update the date at the top of this page when this policy changes, and tell you in the app if the change is significant.</p>
+<h2>What we do not keep</h2>
+<p>Your transcripts are sent to our scoring and feedback processors while a session is being analysed, never alongside your name, email or account identifier. They are not retained by us after analysis beyond the session row itself, which this deletion removes.</p>
 
 <h2>Contact</h2>
 <p><strong>Email</strong>: <a href="mailto:dan.abakah@gmail.com">dan.abakah@gmail.com</a><br>
-<strong>App</strong>: Cohera</p>
+<strong>App</strong>: Cohera<br>
+<strong>Privacy policy</strong>: <a href="../">danteata.github.io/cohera-legal</a></p>
 
 <footer>
-  <p>Cohera &mdash; impromptu speaking practice. This page is the privacy policy referenced by the app&rsquo;s Google Play listing.</p>
+  <p>Cohera &mdash; impromptu speaking practice. This page is the account-deletion page referenced by the app&rsquo;s Google Play listing.</p>
 </footer>
 
 </div>
